@@ -39,10 +39,12 @@ const Navbar = () => {
             <button className={styles.closeButton} onClick={toggleDrawer}>
               ✕
             </button>
-            <p>Welcome</p>
-            <p>Our Menu</p>
-            <p>Franchise</p>
-            <p>Contact</p>
+            <div className={styles.drawerDiv}>
+              <p>Welcome</p>
+              <p>Our Menu</p>
+              <p>Franchise</p>
+              <p>Contact</p>
+            </div>
           </div>
         </div>
       </nav>
