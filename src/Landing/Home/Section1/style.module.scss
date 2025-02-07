@@ -1,73 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-.container {
-  width: 85%;
-  margin: auto;
-  height: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .section {
   width: 100%;
-  height: 100vh;
   background-color: black;
   color: white;
+  padding: 100px 0px;
+  height: fit-content;
+}
+
+.container {
+  width: 90%; // Slightly wider container
+  max-width: 1200px; // Set a maximum width
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; // Consistent gap between elements
 }
 
 .p1 {
   font-family: Inter;
-  font-size: 50px;
+  font-size: 3rem; // Use rem for scalable font sizes
   font-weight: 700;
-  line-height: 70px;
+  line-height: 1.2; // Adjust line height
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .p2 {
-  width: 60%;
-  margin: auto;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 1rem; // Use rem
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.5; // Adjust line height
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  width: 80%; // Make the paragraph width responsive
+  margin: 0 auto;
 }
 
 .module {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column; // Stack elements vertically on smaller screens
   align-items: center;
-  gap: 150px;
+  gap: 30px; // Smaller gap on mobile
 
   p {
-    width: 100%;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1rem; // Use rem
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.5; // Adjust line height
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    width: 100%; // Ensure text takes full width on all screens
   }
 
   img {
     width: 100%;
     border-radius: 30px;
+    max-width: 500px; // Limit image width for very large screens
+  }
+}
+
+// Media query for smaller screens (e.g., tablets and phones)
+@media (min-width: 900px) {
+  .module {
+    flex-direction: row; // Switch back to row layout on larger screens
+    gap: 50px; // Larger gap on larger screens
+    align-items: flex-start; // Align items to the start of the container
+  }
+
+  .p1 {
+    font-size: 4rem; // Larger heading on larger screens
+  }
+
+  .p2 {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+
+  .module p {
+    width: 70%; // Adjust text width when side-by-side with image
+  }
+
+  .module img {
+    width: 70%; // Adjust image width when side-by-side with text
   }
 }

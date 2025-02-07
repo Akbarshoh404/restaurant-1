@@ -20,9 +20,10 @@
 
 .section {
   width: 100%;
-  height: 70vh;
+  height: fit-content;
   background-color: black;
   color: white;
+  padding: 100px 0px;
 }
 
 .title {
@@ -61,4 +62,16 @@
 /* Optional: Add active effect */
 .button:active {
   transform: scale(0.95); /* Slight click animation */
+}
+
+@media (max-width: 1000px) {
+  .title {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    width: 100%;
+  }
 }
