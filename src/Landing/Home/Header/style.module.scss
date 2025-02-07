@@ -64,3 +64,26 @@
 .button:active {
   transform: scale(0.95); /* Slight click animation */
 }
+
+@media (max-width: 650px) {
+  .p1{
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  .button{
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .p2{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 370px) {
+  .p1{
+    font-size: 40px;
+    line-height: normal;
+  }
+}
