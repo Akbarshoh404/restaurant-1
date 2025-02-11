@@ -16,7 +16,6 @@
 
 .container {
   width: 90%; // Slightly wider container
-  max-width: 1200px; // Set a maximum width
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -66,7 +65,7 @@
 }
 
 // Media query for smaller screens (e.g., tablets and phones)
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .module {
     flex-direction: row; // Switch back to row layout on larger screens
     gap: 50px; // Larger gap on larger screens

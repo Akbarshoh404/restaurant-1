@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./style.module.scss";
 
-import burgerImg from "../../../Data/Images/Burgers/image.png";
+import menuImg from "../../../Data/Images/image.png";
 
 const products = [
   {
@@ -10,7 +10,7 @@ const products = [
     title: "Classic Cheeseburger",
     desc: "Juicy beef patty with cheese, lettuce, and tomato.",
     price: "$5.99",
-    img: burgerImg,
+    img: menuImg,
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     title: "Grilled Hotdog",
     desc: "Served with mustard, ketchup, and onions.",
     price: "$3.99",
-    img: burgerImg,
+    img: menuImg,
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const products = [
     title: "Cola",
     desc: "Refreshing cold cola.",
     price: "$1.99",
-    img: burgerImg,
+    img: menuImg,
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const products = [
     title: "Caesar Salad",
     desc: "Crispy romaine with Caesar dressing and croutons.",
     price: "$4.99",
-    img: burgerImg,
+    img: menuImg,
   },
   {
     id: 5,
@@ -42,11 +42,27 @@ const products = [
     title: "French Fries",
     desc: "Crispy golden fries.",
     price: "$2.99",
-    img: burgerImg,
+    img: menuImg,
+  },
+  {
+    id: 6,
+    type: "cookies",
+    title: "Cookies",
+    desc: "Crispy cookies",
+    price: "$2.99",
+    img: menuImg,
   },
 ];
 
-const categories = ["all", "burger", "hotdog", "drink", "salad", "snack"];
+const categories = [
+  "all",
+  "burger",
+  "hotdog",
+  "drink",
+  "salad",
+  "snack",
+  "cookies",
+];
 
 const Section2 = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
