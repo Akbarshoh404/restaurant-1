@@ -20,13 +20,15 @@
 }
 
 .sorting {
+  width: 100%;
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
-  overflow-x: auto; 
-  white-space: nowrap; 
+  overflow-x: auto;
+  white-space: nowrap;
   padding-bottom: 10px;
-  scrollbar-width: none; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
 
   &::-webkit-scrollbar {
